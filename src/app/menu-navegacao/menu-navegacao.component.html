@@ -1,58 +1,38 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
+
         <div class="desktop width_100vw nao_utrapassar_div">
             <nav class="menu_navegacao">
                 <span class="isac_gig" [routerLink]="['/']">Isac Gig</span>
                 <div class="menu__central">
                   <h3 [routerLink]="['/curso']" class="nome_menu">Aulas</h3>
                   <h3 [routerLink]="['/biografia']" class="nome_menu">Biografia</h3>
-                    <h3 [routerLink]="['/contatos']" class="nome_menu">Contatos</h3>
+                  <h3 [routerLink]="['/contatos']" class="nome_menu">Contatos</h3>
                 </div>
                 <mat-icon class="menu__icon custom-tooltip" (click)="abrirMenu()" [matTooltip]="!menuAberto ? 'Abrir Menu' : 'Fechar menu' ">menu</mat-icon>
             </nav>
             <nav *ngIf="menuAberto" class="menu__lateral">
-                <a href="https://www.instagram.com/odaniellukasoficial/">
+                <a href="https://www.instagram.com/isac_gig/">
                     <img src="../../assets/imagens/instagram-icon.svg" alt="instagram" class="logo">
                 </a>
-                <a href="">
+                <a href="https://api.whatsapp.com/send?phone=5531987798762">
                     <img src="../../assets/imagens/whatsapp-icon.svg" alt="whatsapp" class="logo">
-                </a>
-                <a href="https://www.youtube.com/@Odaniellukasoficial">
-                    <img src="../../assets/imagens/youtube-icon.svg" alt="youtube" class="logo">
                 </a>
             </nav>
         </div>
         <div class="mobile">
             <mat-icon class="menu__icon_mobile" (click)="abrirMenu()">menu</mat-icon>
-            <nav class="menu_navegacao_mobile">
+            <nav class="menu_navegacao_mobile" *ngIf="menuAberto">
                 <div class="menu__central" *ngIf="menuAberto">
-                    <h3 [routerLink]="['/biografia']" class="padding-top-7vh">Biografia</h3>
-                    <h3 [routerLink]="['/agenda']" class="padding-top-7vh">Agenda</h3>
-                    <h3 [routerLink]="['/contatos']" class="padding-top-7vh">Contato</h3>
-                    <h3 [routerLink]="['/biblioteca']" class="padding-top-7vh">Biblioteca</h3>
-                    <h3 [routerLink]="['/musicas']" class="padding-top-7vh">Musicas</h3>
+                  <h3 [routerLink]="['/curso']" class="nome_menu  padding-top-7vh-left-20" (click)="abrirMenu()">Aulas</h3>
+                  <h3 [routerLink]="['/biografia']" class="padding-top-7vh-left-20 nome_menu" (click)="abrirMenu()">Biografia</h3>
+                  <h3 [routerLink]="['/contatos']" class="padding-top-7vh-left-20 nome_menu" (click)="abrirMenu()">Contatos</h3>
                 </div>
             </nav>
             <nav class="menu__lateral_mobile" *ngIf="menuAberto">
-                <a href="https://www.instagram.com/odaniellukasoficial/">
+                <a href="https://www.instagram.com/isac_gig/">
                     <img src="../../assets/imagens/instagram-icon.svg" alt="instagram" class="logo">
                 </a>
-                <a href="">
+                <a href="https://api.whatsapp.com/send?phone=5531987798762">
                     <img src="../../assets/imagens/whatsapp-icon.svg" alt="whatsapp" class="logo">
-                </a>
-                <a href="https://www.youtube.com/@Odaniellukasoficial">
-                    <img src="../../assets/imagens/youtube-icon.svg" alt="youtube" class="logo">
                 </a>
             </nav>
         </div>
-    </header>
-</body>
-</html>
