@@ -1,0 +1,19 @@
+a span {
+  color: white;
+  font-size: 4vh;
+  margin-left: 2%;
+  border-bottom: 3px solid rgba(255, 154, 3, 0);
+}
+
+a span:hover{
+  border-bottom: 3px solid #ff9a03;
+}
+
+
+.titulo_contatos{
+  font-size: 5vh;
+  text-align: center;
+  color: white;
+  border-bottom: 3px solid #ff9a03;
+  border-top: 3px solid #ff9a03;
+}

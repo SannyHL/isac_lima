@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+body{
+    background: rgb(0, 0, 0);
+    height: 100vh;
+}
+@media only screen and (max-width: 684px) {
+    body{
+       padding: 0px;
+        height: 98vh;
+    }
+}

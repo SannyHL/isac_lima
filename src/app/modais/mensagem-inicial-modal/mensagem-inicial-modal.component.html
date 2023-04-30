@@ -1,0 +1,13 @@
+<div class="mat-dialog-container rotate-in">
+  <div class="fechar" matTooltip="Fechar" (click)="onCancelar()">
+    <span class="color_white">X</span>
+  </div>
+  <p class="texto_central" [style.marginTop.%]="1.5">Você sempre quis aprender a tocar violão, guitarra ou baixo,<br>mas nunca teve a chance?</p><br>
+  <p class="texto_central">Talvez você já tenha tentado aprender sozinho, mas não conseguiu?<br></p>
+  <p class="texto_central font_2rem">Seja qual for a sua experiência, eu estou aqui para ajudar!</p>
+  <div class="display_flex_row_font_4vh" [routerLink]="['/curso']" (click)="onCancelar()">
+    <p class="saber_mais">Saber mais</p>
+    <mat-icon class="color_white transform_1_5">read_more</mat-icon>
+  </div>
+
+</div>

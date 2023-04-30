@@ -1,1 +1,396 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Kanit:ital,wght@1,500&family=Licorice&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.mat-dialog-container {
+  animation: openClose 2s;
+}
+
+@keyframes openClose {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.color_white{
+  color: white;
+}
+
+
+.mat-mdc-dialog-container {
+  background: #ff9a03;
+  padding: 1%;
+  border: 2px dashed black;
+  border-radius: 11px;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  border-radius: var(--mdc-dialog-container-shape, var(--mdc-shape-medium, 4px));
+  padding: 2% 1%;
+  background: black !important;
+}
+
+.isac_gig{
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 2rem;
+  font-weight: 1000;
+  cursor: pointer;
+}
+.nome_menu:hover{
+  border-bottom: 3px solid #ff9a03;
+}
+
+.nome_menu{
+  border-bottom: 3px solid transparent;
+}
+
+
+.nao_utrapassar_div{
+  overflow: hidden;
+}
+
+.width_100{
+  width: 100%;
+}
+.menu_navegacao{
+    padding: 1% 2%;
+    height: 7vh;
+    height: 7vh;
+    color: #ff9a03;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.menu__central{
+    width: 45vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vh;
+    cursor: pointer;
+    margin-left: -10%;
+}
+
+.menu__nome{
+    height: 6vh;
+    cursor: pointer;
+}
+
+.menu__icon{
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu__lateral{
+    height: 25vh;
+    position: absolute;
+    right: 1.5%;
+    top: 8%;
+    background: #f8eac400;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+}
+
+.logo:hover{
+    height: 35px;
+    width: 35px;
+}
+
+.mobile{
+    display: none;
+}
+
+.padding-top-7vh{
+    padding-top: 7vh;
+}
+
+.mat-h3, .mat-subtitle-1, .mat-typography .mat-h3, .mat-typography .mat-subtitle-1, .mat-typography h3{
+    font-family: 'Kanit', sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.7vh;
+    color: white;
+}
+
+.mat-calendar{
+  width: 50vh;
+  border: 3px dashed #ff9a03;
+  border-radius: 50px;
+}
+
+.mat-calendar-controls .mat-mdc-icon-button.mat-mdc-button-base {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  color: white;
+}
+
+.mat-calendar-body-cell-content.mat-focus-indicator {
+  color: white;
+}
+
+.mat-calendar-table-header th {
+  text-align: center;
+  padding: 0 0 8px 0;
+  color: white;
+}
+
+.mat-mdc-button .mdc-button__label, .mat-mdc-unelevated-button .mdc-button__label, .mat-mdc-raised-button .mdc-button__label, .mat-mdc-outlined-button .mdc-button__label {
+  z-index: 1;
+  color: white;
+}
+.mat-calendar-body-label {
+  height: 0;
+  line-height: 0;
+  text-align: left;
+  padding-left: 4.7142857143%;
+  padding-right: 4.7142857143%;
+  color: white;
+}
+
+.mat-calendar-arrow {
+  fill: white;
+}
+
+.imagem_contatos{
+  height: 60vh;
+  border-radius: 11px;
+  margin-top: 2vh;
+}
+
+.display_flex{
+  display: flex;
+  padding: 0 2%;
+  margin-top: 8%;
+  width: 96%;
+  justify-content: space-between;
+}
+
+.display_flex_row_font_4vh{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 4vh;
+  position: relative;
+  left: 76%;
+  top: 5vh;
+  cursor: pointer;
+  width: 25vh;
+  outline: none !important;
+  border: none !important;
+}
+
+.display_flex_row_font_4vh:active{
+  border: none !important;
+}
+.display_flex_row_font_4vh:active{
+  outline: none;
+}
+
+.fechar{
+  position: relative;
+  left: 95%;
+  margin-bottom: -3%;
+  height: 25px;
+  width: 25px;
+  background: red;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: icon;
+  font-weight: 900;
+  top: 4%;
+  cursor: pointer;
+}
+
+.transform_1_5{
+  transform: scale(1.5);
+}
+
+.saber_mais{
+  position: relative;
+  left: -2%;
+}
+
+.aula{
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.contatos{
+  width: 40%;
+}
+
+.contatos_link{
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+.paragrafo{
+  font-size: 1.4rem;
+  line-height: 4vh;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff9a03;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+.titulo{
+  font-size: 5vh !important;
+  text-align: center;
+  color: white;
+  border-bottom: 3px solid #ff9a03;
+  border-top: 3px solid #ff9a03;
+}
+
+p{
+  color: white;
+}
+
+.texto_central{
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.font_2rem{
+  font-size: 2rem !important;
+  color: #ff9a03;
+  font-family: fantasy;
+  margin-top: 4%;
+}
+
+.aula_imagem {
+  height: 35vh;
+  border: 3px dashed #ff9a03;
+  border-radius: 50px;
+}
+
+.container_aula{
+  background: #f9993708;
+  border-radius: 50px;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: oblique;
+  padding: 2% 0;
+}
+
+.paragrafo_aviso {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ff9a03;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 684px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        color: #2F1F00;
+    }
+    .menu__icon_mobile{
+        transform: scale(1.5);
+        cursor: pointer;
+        z-index: 2;
+        position: absolute;
+        top: 3vh;
+        left: 4vw;
+    }
+    .menu_navegacao_mobile{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menu__nome{
+        height: 5vh;
+        padding-bottom: 6vh;
+        padding-top: 2vh;
+        cursor: pointer;
+    }
+    .menu__central{
+        flex-direction: column;
+        font-size: 50px !important;
+    }
+
+    .mat-h3, .mat-subtitle-1, .mat-typography .mat-h3, .mat-typography .mat-subtitle-1, .mat-typography h3{
+        font-family: 'Modern Antiqua';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4vh;
+        color: #2F1F00;
+    }
+
+    .menu__lateral_mobile{
+        width: 100vw;
+        display: flex;
+        position: absolute;
+        top: 84vh;
+        justify-content: space-around;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo:hover{
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

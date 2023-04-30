@@ -1,0 +1,19 @@
+.calendar-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.calendar {
+  border: 1px solid #ccc;
+}
+
+.calendario-ocupado .calendario-day-cell {
+  background-color: #f2f2f2 !important;
+  cursor: not-allowed !important;
+}
