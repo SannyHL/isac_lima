@@ -22,6 +22,7 @@
             <mat-icon class="menu__icon_mobile" (click)="abrirMenu()">menu</mat-icon>
             <nav class="menu_navegacao_mobile" *ngIf="menuAberto">
                 <div class="menu__central" *ngIf="menuAberto">
+                  <h3 [routerLink]="['/']" class="nome_menu  padding-top-7vh-left-20" (click)="abrirMenu()">Home</h3>
                   <h3 [routerLink]="['/curso']" class="nome_menu  padding-top-7vh-left-20" (click)="abrirMenu()">Aulas</h3>
                   <h3 [routerLink]="['/biografia']" class="padding-top-7vh-left-20 nome_menu" (click)="abrirMenu()">Biografia</h3>
                   <h3 [routerLink]="['/contatos']" class="padding-top-7vh-left-20 nome_menu" (click)="abrirMenu()">Contatos</h3>
