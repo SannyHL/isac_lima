@@ -524,9 +524,11 @@ p{
     }
 
     .paragrafo {
-      font-size: 1.4rem;
-      line-height: 3vh;
+      font-size: 0.99rem !important;
+      font-weight: 500;
+      line-height: 3vh !important;
       text-align: center;
+      font-family: system-ui;
       margin-top: -25vh !important;
   }
 
@@ -546,7 +548,7 @@ p{
   justify-content: center;
   font-style: oblique;
   padding: 2% 0;
-  width: 100% !important;
+  width: 85% !important;
 }
 .atencao{
   margin-top: -30% !important;
@@ -614,7 +616,7 @@ a {
   font-weight: 600;
   position: relative;
   left: 70% !important;
-  top: 0.5vh !important;
+  top: -2.5vh !important;
   border: 2px dashed black;
   color: black;
 }
@@ -632,59 +634,59 @@ a {
     width: 25vh;
     outline: none!important;
     border: none!important;
-}
-.fechar {
-  position: relative;
-  left: 85%;
-  margin-bottom: 1%;
-  height: 23px;
-  width: 23px;
-  background: red;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 14px!important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: icon;
-  font-weight: 900;
-  top: 4%;
-  cursor: pointer;
-}
-.texto_central {
-  font-size: 0.9rem;
-  text-align: center;
-  color: #fff;
-  font-family: arial;
-  font-style: oblique;
-  font-weight: 400;
-  line-height: 110%;
-  margin-top: 1% !important;
-}
-.isac_gig {
-  font-family: 'Bruno Ace SC', cursive !important;
-  font-size: 3rem !important;
-  font-weight: 1000 !important;
-  color: orange;
-}
-.aula_imagem {
-  height: 20vh;
-  border: 3px dashed #ff9a03;
-  border-radius: 50px;
-  margin-bottom: 18vh !important;
-}
-.paragrafo {
-  font-size: 0.99rem !important;
-  line-height: 3vh !important;
-  text-align: center;
-}
-.paragrafo_aviso {
-  font-size: 1.1rem;
-  text-align: center;
-  color: #ff9a03;
-  font-weight: 600;
-  margin-top: -7% !important;
-}
+  }
+  .fechar {
+    position: relative;
+    left: 85%;
+    margin-bottom: 1%;
+    height: 23px;
+    width: 23px;
+    background: red;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: icon;
+    font-weight: 900;
+    top: 4%;
+    cursor: pointer;
+  }
+  .texto_central {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    font-family: arial;
+    font-style: oblique;
+    font-weight: 400;
+    line-height: 110%;
+    margin-top: 1% !important;
+  }
+  .isac_gig {
+    font-family: 'Bruno Ace SC', cursive !important;
+    font-size: 3rem !important;
+    font-weight: 1000 !important;
+    color: orange;
+  }
+  .aula_imagem {
+    height: 20vh;
+    border: 3px dashed #ff9a03;
+    border-radius: 50px;
+    margin-bottom: 18vh !important;
+  }
+  .paragrafo {
+    font-size: 0.99rem !important;
+    line-height: 3vh !important;
+    text-align: center;
+  }
+  .paragrafo_aviso {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ff9a03;
+    font-weight: 600;
+    margin-top: -7% !important;
+  }
 }
 
 }
